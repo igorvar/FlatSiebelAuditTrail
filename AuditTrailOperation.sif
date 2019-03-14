@@ -1,0 +1,1534 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<REPOSITORY
+   NAME="Siebel Repository"
+   FIO_PLACEHOLDER_FIO="TRUE">
+	<PROJECT
+	   ALLOW_OBJECT_LOCKING="Y"
+	   COMMENTS="LOCKED BY VTAO UI UPGRADE"
+	   INACTIVE="N"
+	   LANGUAGE_LOCKED="ENU"
+	   LOCKED="N"
+	   NAME="Audit Trail"
+	   UI_FREEZE="N"
+	   FIO_PLACEHOLDER_FIO="TRUE">
+		<BUSINESS_COMPONENT
+		   CACHE_DATA="N"
+		   CLASS="CSSBusComp"
+		   DIRTY_READS="Y"
+		   DISTINCT="N"
+		   FORCE_ACTIVE="N"
+		   GENREASSIGNACT="N"
+		   INACTIVE="N"
+		   INSERT_UPDATE_ALL_COLUMNS="N"
+		   LOG_CHANGES="Y"
+		   MULTI_RECIPIENT_SELECT="N"
+		   NAME="VIF Audit Trail Item Flat"
+		   NO_DELETE="N"
+		   NO_INSERT="N"
+		   NO_MERGE="N"
+		   NO_UPDATE="N"
+		   OBJECT_LOCKED="N"
+		   OWNER_DELETE="N"
+		   POPUP_VISIBILITY_AUTO_ALL="N"
+		   SCRIPTED="N"
+		   SORT_SPECIFICATION="Date(Desc)"
+		   TABLE="CX_VIF_AUDT_ITM"
+		   TYPE="Non-Transient">
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="AUDIT_SOURCE_CD"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Audit Source"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="50"
+			   TYPE="DTYPE_TEXT"
+			   USE_DEFAULT_SENSITIVITY="Y">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="BC_BASE_TBL"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Buscomp Base Table"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="30"
+			   TYPE="DTYPE_TEXT"
+			   USE_DEFAULT_SENSITIVITY="Y">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="BUSCOMP_NAME"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Business Component"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="75"
+			   TYPE="DTYPE_TEXT"
+			   USE_DEFAULT_SENSITIVITY="Y">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="CHILD_BC_BASE_TBL"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Child Buscomp Base Table"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="30"
+			   TYPE="DTYPE_TEXT"
+			   USE_DEFAULT_SENSITIVITY="Y">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="CHILD_RECORD_ID"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Child Buscomp Record Id"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="15"
+			   TYPE="DTYPE_ID"
+			   USE_DEFAULT_SENSITIVITY="Y">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="CHILD_BC_NAME"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Child Business Component"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="75"
+			   TYPE="DTYPE_TEXT"
+			   USE_DEFAULT_SENSITIVITY="Y">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="CLMN"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Column"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="30"
+			   TYPE="DTYPE_TEXT"
+			   USE_DEFAULT_SENSITIVITY="Y">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="OPERATION_DT"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Date"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TYPE="DTYPE_UTCDATETIME"
+			   USE_DEFAULT_SENSITIVITY="Y">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="SYNC_DT"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Date Synchronized"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TYPE="DTYPE_UTCDATETIME"
+			   USE_DEFAULT_SENSITIVITY="Y">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="FST_NAME"
+			   COMPOSITE="N"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   JOIN="S_CONTACT"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Employee First Name"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="50"
+			   TYPE="DTYPE_TEXT"
+			   USE_DEFAULT_SENSITIVITY="Y">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="USER_ID"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Employee Id"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="15"
+			   TYPE="DTYPE_ID"
+			   USE_DEFAULT_SENSITIVITY="Y">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="JOB_TITLE"
+			   COMPOSITE="N"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   JOIN="S_CONTACT"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Employee Job Title"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="75"
+			   TYPE="DTYPE_TEXT"
+			   USE_DEFAULT_SENSITIVITY="Y">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="LAST_NAME"
+			   COMPOSITE="N"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   JOIN="S_CONTACT"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Employee Last Name"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="50"
+			   TYPE="DTYPE_TEXT"
+			   USE_DEFAULT_SENSITIVITY="Y">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="LOGIN"
+			   COMPOSITE="N"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   JOIN="S_USER"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Employee Login"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="50"
+			   TYPE="DTYPE_TEXT"
+			   USE_DEFAULT_SENSITIVITY="Y">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="FIELD_NAME"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Field"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="75"
+			   TYPE="DTYPE_TEXT"
+			   USE_DEFAULT_SENSITIVITY="Y">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="GROUP_NUM"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Group Id"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="15"
+			   TYPE="DTYPE_ID"
+			   USE_DEFAULT_SENSITIVITY="Y">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="VIF_ROOT_BUSCOMP_NAME"
+			   COMMENTS="BC for it need audit trail"
+			   COMPOSITE="N"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="VIF Root Business Component"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="75"
+			   TYPE="DTYPE_TEXT"
+			   USE_DEFAULT_SENSITIVITY="Y">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="VIF_ROOT_RECORD_ID"
+			   COMMENTS="Id in BC for it need audit trail"
+			   COMPOSITE="N"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="VIF Root Record Id"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="15"
+			   TYPE="DTYPE_ID"
+			   USE_DEFAULT_SENSITIVITY="Y">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="LINK_NAME"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Link Name"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="175"
+			   TYPE="DTYPE_TEXT"
+			   USE_DEFAULT_SENSITIVITY="Y">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="NEW_VAL"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="New Value"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="50"
+			   TYPE="DTYPE_TEXT"
+			   USE_DEFAULT_SENSITIVITY="Y">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="NODE_NAME"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Node"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="50"
+			   TYPE="DTYPE_TEXT"
+			   USE_DEFAULT_SENSITIVITY="Y">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="OLD_VAL"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Old Value"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="50"
+			   TYPE="DTYPE_TEXT"
+			   USE_DEFAULT_SENSITIVITY="Y">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="OPERATION_CD"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Operation"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="30"
+			   TYPE="DTYPE_TEXT"
+			   USE_DEFAULT_SENSITIVITY="Y">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="RECORD_ID"
+			   COMMENTS="Not in use"
+			   COMPOSITE="N"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="Y"
+			   JOIN="Parent Record CX_VIF_AUDT_ITM"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Parent Record Id"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="15"
+			   TYPE="DTYPE_ID"
+			   USE_DEFAULT_SENSITIVITY="Y">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="RECORD_ID"
+			   COMMENTS="Id of record, which is being audited"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Record Id"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="15"
+			   TYPE="DTYPE_ID"
+			   USE_DEFAULT_SENSITIVITY="Y">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="TBL_NAME"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Table Name"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="30"
+			   TYPE="DTYPE_TEXT"
+			   USE_DEFAULT_SENSITIVITY="Y">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="TBL_RECORD_ID"
+			   COMPOSITE="N"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Table Row Id"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="15"
+			   TYPE="DTYPE_ID"
+			   USE_DEFAULT_SENSITIVITY="Y">
+			</FIELD>
+			<JOIN
+			   COMMENTS="Not in use"
+			   INACTIVE="Y"
+			   NAME="Parent Record CX_VIF_AUDT_ITM"
+			   OUTER_JOIN_FLAG="Y"
+			   TABLE="CX_VIF_AUDT_ITM">
+				<JOIN_SPECIFICATION
+				   DESTINATION_COLUMN="CHILD_RECORD_ID"
+				   INACTIVE="N"
+				   NAME="Id"
+				   SOURCE_FIELD="Record Id">
+				</JOIN_SPECIFICATION>
+			</JOIN>
+			<JOIN
+			   INACTIVE="N"
+			   NAME="S_CONTACT"
+			   OUTER_JOIN_FLAG="Y"
+			   TABLE="S_CONTACT">
+				<JOIN_SPECIFICATION
+				   DESTINATION_COLUMN="PAR_ROW_ID"
+				   INACTIVE="N"
+				   NAME="Employee Id"
+				   SOURCE_FIELD="Employee Id">
+				</JOIN_SPECIFICATION>
+			</JOIN>
+			<JOIN
+			   INACTIVE="N"
+			   NAME="S_USER"
+			   OUTER_JOIN_FLAG="Y"
+			   TABLE="S_USER">
+				<JOIN_SPECIFICATION
+				   DESTINATION_COLUMN="PAR_ROW_ID"
+				   INACTIVE="N"
+				   NAME="01"
+				   SOURCE_FIELD="Employee Id">
+				</JOIN_SPECIFICATION>
+			</JOIN>
+		</BUSINESS_COMPONENT>
+		<BUSINESS_SERVICE
+		   CACHE="N"
+		   CLASS="CSSService"
+		   EXTERNAL_USE="Y"
+		   HIDDEN="N"
+		   INACTIVE="N"
+		   NAME="VIF Audit Trail Operation"
+		   OBJECT_LOCKED="N"
+		   SERVER_ENABLED="N"
+		   STATE_MANAGEMENT_TYPE="Stateful"
+		   WEB_SERVICE_ENABLED="N">
+			<BUSINESS_SERVICE_METHOD
+			   HIDDEN="N"
+			   INACTIVE="N"
+			   NAME="Refresh">
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="BC"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Id"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input">
+				</BUSINESS_SERVICE_METHOD_ARG>
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="CopyRecord"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function CopyRecord(bcSiebelAT:BusComp, bcItoAT:BusComp, rootBc, rootRecordId)
+{
+/*
+Create new record in bcItoAt same as in bcSiebelAT, but with key fields rootBc, rootRecordId this fields for link)
+*/
+	var thisFunctionName = &quot;CopyRecord&quot;;
+	try
+	{
+		bcItoAT.NewRecord(NewAfter);
+		bcItoAT.SetFieldValue(&quot;Record Id&quot;, 						bcSiebelAT.GetFieldValue(&quot;Record Id&quot;));
+		bcItoAT.SetFieldValue(&quot;Audit Source&quot;,					bcSiebelAT.GetFieldValue(&quot;Audit Source&quot;));
+		bcItoAT.SetFieldValue(&quot;Buscomp Base Table&quot;,				bcSiebelAT.GetFieldValue(&quot;Buscomp Base Table&quot;));
+		bcItoAT.SetFieldValue(&quot;Business Component&quot;,				bcSiebelAT.GetFieldValue(&quot;Business Component&quot;));
+		bcItoAT.SetFieldValue(&quot;Child Buscomp Base Table&quot;,		bcSiebelAT.GetFieldValue(&quot;Child Buscomp Base Table&quot;));
+		bcItoAT.SetFieldValue(&quot;Child Buscomp Record Id&quot;,		bcSiebelAT.GetFieldValue(&quot;Child Buscomp Record Id&quot;));
+		bcItoAT.SetFieldValue(&quot;Child Business Component&quot;,		bcSiebelAT.GetFieldValue(&quot;Child Business Component&quot;));
+		bcItoAT.SetFieldValue(&quot;Column&quot;,							bcSiebelAT.GetFieldValue(&quot;Column&quot;));
+///////////////////////////
+		bcItoAT.SetFieldValue(&quot;Date&quot;,							bcSiebelAT.GetFieldValue(&quot;Date&quot;));
+		bcItoAT.SetFieldValue(&quot;Date Synchronized&quot;,				bcSiebelAT.GetFieldValue(&quot;Date Synchronized&quot;));
+		bcItoAT.SetFieldValue(&quot;Employee Id&quot;,					bcSiebelAT.GetFieldValue(&quot;Employee Id&quot;));
+		bcItoAT.SetFieldValue(&quot;Field&quot;,							bcSiebelAT.GetFieldValue(&quot;Field&quot;));
+		bcItoAT.SetFieldValue(&quot;Group Id&quot;,						bcSiebelAT.GetFieldValue(&quot;Group Id&quot;));
+		bcItoAT.SetFieldValue(&quot;Link Name&quot;,						bcSiebelAT.GetFieldValue(&quot;Link Name&quot;));
+		bcItoAT.SetFieldValue(&quot;New Value&quot;,						bcSiebelAT.GetFieldValue(&quot;New Value&quot;));
+		bcItoAT.SetFieldValue(&quot;Node&quot;,							bcSiebelAT.GetFieldValue(&quot;Node&quot;));
+		bcItoAT.SetFieldValue(&quot;Old Value&quot;,						bcSiebelAT.GetFieldValue(&quot;Old Value&quot;));
+		bcItoAT.SetFieldValue(&quot;Operation&quot;,						bcSiebelAT.GetFieldValue(&quot;Operation&quot;));
+		bcItoAT.SetFieldValue(&quot;Record Id&quot;,						bcSiebelAT.GetFieldValue(&quot;Record Id&quot;));
+		bcItoAT.SetFieldValue(&quot;Table Name&quot;,						bcSiebelAT.GetFieldValue(&quot;Table Name&quot;));
+		bcItoAT.SetFieldValue(&quot;Table Row Id&quot;,					bcSiebelAT.GetFieldValue(&quot;Table Row Id&quot;));
+		bcItoAT.SetFieldValue(&quot;VIF Root Business Component&quot;,	rootBc);
+		bcItoAT.SetFieldValue(&quot;VIF Root Record Id&quot;,				rootRecordId);
+////////////////////////////
+		bcItoAT.WriteRecord();
+	}
+	catch(e)
+	{
+		WriteToLog(thisFunctionName, e.message);
+		TheApplication().RaiseErrorText(e.message);
+	}
+}"
+			   SEQUENCE="1">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="Refresh"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function Refresh(bcName, Id)
+{
+	var thisFunctionName = &quot;Refresh&quot;;
+	var bcSiebelAT: BusComp;
+	var bcItoAT:BusComp;
+	var childRecords = new Array();
+	try
+	{
+		RemovePresentsRecords(bcName, Id);
+		bcSiebelAT = TheApplication().GetBusObject(&quot;Audit Trail&quot;).GetBusComp(&quot;Audit Trail Item 2&quot;);
+		bcSiebelAT.SetSearchSpec(&quot;Record Id&quot;, Id);
+		bcSiebelAT.SetSearchSpec(&quot;Business Component&quot;, bcName);
+		bcSiebelAT.ActivateField(&quot;Record Id&quot;);
+		bcSiebelAT.ActivateField(&quot;Audit Source&quot;);
+		bcSiebelAT.ActivateField(&quot;Buscomp Base Table&quot;);
+		bcSiebelAT.ActivateField(&quot;Business Component&quot;);
+		bcSiebelAT.ActivateField(&quot;Child Buscomp Base Table&quot;);
+		bcSiebelAT.ActivateField(&quot;Child Buscomp Record Id&quot;);
+		bcSiebelAT.ActivateField(&quot;Child Business Component&quot;);
+		bcSiebelAT.ActivateField(&quot;Column&quot;);
+		bcSiebelAT.ActivateField(&quot;Date&quot;);
+		bcSiebelAT.ActivateField(&quot;Date Synchronized&quot;);
+		bcSiebelAT.ActivateField(&quot;Employee Id&quot;);
+		bcSiebelAT.ActivateField(&quot;Field&quot;);
+		bcSiebelAT.ActivateField(&quot;Group Id&quot;);
+		bcSiebelAT.ActivateField(&quot;Link Name&quot;);
+		bcSiebelAT.ActivateField(&quot;New Value&quot;);
+		bcSiebelAT.ActivateField(&quot;Node&quot;);
+		bcSiebelAT.ActivateField(&quot;Old Value&quot;);
+		bcSiebelAT.ActivateField(&quot;Operation&quot;);
+		bcSiebelAT.ActivateField(&quot;Record Id&quot;);
+		bcSiebelAT.ActivateField(&quot;Table Name&quot;);
+		bcSiebelAT.ActivateField(&quot;Table Row Id&quot;);
+		bcSiebelAT.ExecuteQuery(ForwardOnly);
+		
+		if(!bcSiebelAT.FirstRecord()) return; // no record in standart bc 
+		
+		bcItoAT = TheApplication().GetBusObject(&quot;Audit Trail&quot;).GetBusComp(&quot;VIF Audit Trail Item Flat&quot;);
+		do
+		{
+			CopyRecord(bcSiebelAT, bcItoAT, bcName, Id);
+	//		if(bcSiebelAT.GetFieldValue(&quot;Child Buscomp Record Id&quot;) != &quot;&quot;) If row added and after this removed will by will double recording about update of child
+			if (bcSiebelAT.GetFieldValue(&quot;Operation&quot;) == &quot;Associate&quot;)
+				childRecords[childRecords.length] = &quot;[Business Component] = &apos;&quot; + bcSiebelAT.GetFieldValue(&quot;Child Business Component&quot;) + &quot;&apos; and [Record Id] = &apos;&quot; + bcSiebelAT.GetFieldValue(&quot;Child Buscomp Record Id&quot;) + &quot;&apos;&quot;
+		}while (bcSiebelAT.NextRecord());
+	
+		//for Child records
+		for (var i = 0; i &lt; childRecords.length; i++)
+		{
+			bcSiebelAT.ClearToQuery();
+			bcSiebelAT.SetSearchExpr(childRecords[i]);
+			bcSiebelAT.ExecuteQuery(ForwardOnly);
+			if(!bcSiebelAT.FirstRecord()) continue; // to begin FOR loop
+			do
+			{
+				CopyRecord(bcSiebelAT, bcItoAT, bcName, Id);
+				/* 
+				This block for grandchildren, grandgrandchildren... If record of children contain reference to his own child, 
+				array of searchspeck increated
+				not tested
+				if (bcSiebelAT.GetFieldValue(&quot;Operation&quot;) == &quot;Associate&quot;)
+					childRecords[childRecords.length] = &quot;[Business Component] = &apos;&quot; + bcSiebelAT.GetFieldValue(&quot;Child Business Component&quot;) + &quot;&apos; and [Record Id] = &apos;&quot; + bcSiebelAT.GetFieldValue(&quot;Child Buscomp Record Id&quot;) + &quot;&apos;&quot;
+				*/
+			}while (bcSiebelAT.NextRecord());
+		}
+	} // end of try{}
+	catch(e)
+	{
+		WriteToLog(thisFunctionName, e.message);
+		TheApplication().RaiseErrorText(e.message);
+	}
+	finally
+	{
+		bcSiebelAT = null;
+		bcItoAT = null;
+		childRecords = null;
+	}
+}"
+			   SEQUENCE="2">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="RemovePresentsRecords"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function RemovePresentsRecords(rootBcName, rootRecordId)
+{
+	var thisFunctionName = &quot;RemovePresentsRecords&quot;;
+	var bc:BusComp;
+	try
+	{
+		bc = TheApplication().GetBusObject(&quot;Audit Trail&quot;).GetBusComp(&quot;VIF Audit Trail Item Flat&quot;);
+		bc.SetSearchSpec(&quot;VIF Root Business Component&quot;, rootBcName);
+		bc.SetSearchSpec(&quot;VIF Root Record Id&quot;, rootRecordId);
+		bc.ExecuteQuery(ForwardOnly);
+	
+		if (!bc.FirstRecord()) return;
+	
+		do
+		{
+			bc.DeleteRecord();
+		} while(bc.FirstRecord());
+	}
+	catch(e)
+	{
+		WriteToLog(thisFunctionName, e.message);
+		TheApplication().RaiseErrorText(e.message);
+	}
+	finally
+	{
+		bc = null;
+	}
+}"
+			   SEQUENCE="3">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="Service_PreInvokeMethod"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function Service_PreInvokeMethod (MethodName, Inputs:PropertySet, Outputs)
+{
+	switch (MethodName)
+	{
+		case &quot;Refresh&quot;:
+			Refresh(Inputs.GetProperty(&quot;BC&quot;), Inputs.GetProperty(&quot;Id&quot;));
+			break;
+		default:
+			return (ContinueOperation);
+	}
+	return (CancelOperation);
+}"
+			   SEQUENCE="5">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="WriteToLog"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function WriteToLog(functionName, messageText)
+{
+	var ips:PropertySet;
+	ips = TheApplication().NewPropertySet();
+	ips.SetProperty(&quot;ObjectType&quot;, &quot;BS&quot;);
+	ips.SetProperty(&quot;ObjectName&quot;, this.Name());
+	ips.SetProperty(&quot;FunctionName&quot;, functionName);
+	ips.SetProperty(&quot;MessageContent&quot;, messageText);
+	TheApplication().GetService(&quot;User Log Service&quot;).InvokeMethod(&quot;WriteToLog&quot;, ips, TheApplication().NewPropertySet());
+	ips = null;
+}"
+			   SEQUENCE="4">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+		</BUSINESS_SERVICE>
+		<TABLE
+		   APPEND_DATA="N"
+		   COMMENTS="IgorV. 09.01.17"
+		   FILE="N"
+		   INACTIVE="N"
+		   NAME="CX_VIF_AUDT_ITM"
+		   NODE_TYPE="ALL"
+		   OBJECT_LOCKED="N"
+		   PARTITION_INDICATOR="N"
+		   STATUS="Active"
+		   TYPE="Data (Public)"
+		   USER_NAME="CX_VIF_AUDT_ITM"
+		   VOLATILE="N">
+			<COLUMN
+			   ASCII_ONLY="N"
+			   CASCADE_CLEAR="N"
+			   DEFAULT_INSENSITIVITY="None"
+			   EIM_PROCESSING_COLUMN_FLAG="N"
+			   INACTIVE="N"
+			   LOV_BOUNDED="N"
+			   NAME="AUDIT_SOURCE_CD"
+			   NULLABLE="Y"
+			   PHYSICAL_TYPE="V"
+			   PRIMARY_CHILD_COL="N"
+			   PRIMARY_KEY="N"
+			   REQUIRED="N"
+			   STATUS="Active"
+			   TEXT_LENGTH="50"
+			   TXN_LOG_CODE="Y"
+			   TYPE="Data (Public)"
+			   USE_FKEY="N"
+			   USER_NAME="Audit Source">
+			</COLUMN>
+			<COLUMN
+			   ASCII_ONLY="N"
+			   CASCADE_CLEAR="N"
+			   DEFAULT_INSENSITIVITY="None"
+			   EIM_PROCESSING_COLUMN_FLAG="N"
+			   INACTIVE="N"
+			   LOV_BOUNDED="N"
+			   NAME="BC_BASE_TBL"
+			   NULLABLE="Y"
+			   PHYSICAL_TYPE="V"
+			   PRIMARY_CHILD_COL="N"
+			   PRIMARY_KEY="N"
+			   REQUIRED="N"
+			   STATUS="Active"
+			   TEXT_LENGTH="30"
+			   TXN_LOG_CODE="Y"
+			   TYPE="Data (Public)"
+			   USE_FKEY="N"
+			   USER_NAME="Buscomp Base Table">
+			</COLUMN>
+			<COLUMN
+			   ASCII_ONLY="N"
+			   CASCADE_CLEAR="N"
+			   DEFAULT_INSENSITIVITY="None"
+			   EIM_PROCESSING_COLUMN_FLAG="N"
+			   INACTIVE="N"
+			   LOV_BOUNDED="N"
+			   NAME="BUSCOMP_NAME"
+			   NULLABLE="Y"
+			   PHYSICAL_TYPE="V"
+			   PRIMARY_CHILD_COL="N"
+			   PRIMARY_KEY="N"
+			   REQUIRED="N"
+			   STATUS="Active"
+			   TEXT_LENGTH="75"
+			   TXN_LOG_CODE="Y"
+			   TYPE="Data (Public)"
+			   USE_FKEY="N"
+			   USER_NAME="Business Component">
+			</COLUMN>
+			<COLUMN
+			   ASCII_ONLY="N"
+			   CASCADE_CLEAR="N"
+			   DEFAULT_INSENSITIVITY="None"
+			   EIM_PROCESSING_COLUMN_FLAG="N"
+			   INACTIVE="N"
+			   LOV_BOUNDED="N"
+			   NAME="CHILD_BC_BASE_TBL"
+			   NULLABLE="Y"
+			   PHYSICAL_TYPE="V"
+			   PRIMARY_CHILD_COL="N"
+			   PRIMARY_KEY="N"
+			   REQUIRED="N"
+			   STATUS="Active"
+			   TEXT_LENGTH="30"
+			   TXN_LOG_CODE="Y"
+			   TYPE="Data (Public)"
+			   USE_FKEY="N"
+			   USER_NAME="Child Buscomp Base Table">
+			</COLUMN>
+			<COLUMN
+			   ASCII_ONLY="N"
+			   CASCADE_CLEAR="N"
+			   DEFAULT_INSENSITIVITY="None"
+			   EIM_PROCESSING_COLUMN_FLAG="N"
+			   INACTIVE="N"
+			   LOV_BOUNDED="N"
+			   NAME="CHILD_BC_NAME"
+			   NULLABLE="Y"
+			   PHYSICAL_TYPE="V"
+			   PRIMARY_CHILD_COL="N"
+			   PRIMARY_KEY="N"
+			   REQUIRED="N"
+			   STATUS="Active"
+			   TEXT_LENGTH="75"
+			   TXN_LOG_CODE="Y"
+			   TYPE="Data (Public)"
+			   USE_FKEY="N"
+			   USER_NAME="Child Business Component">
+			</COLUMN>
+			<COLUMN
+			   ASCII_ONLY="N"
+			   CASCADE_CLEAR="N"
+			   DEFAULT_INSENSITIVITY="None"
+			   EIM_PROCESSING_COLUMN_FLAG="N"
+			   INACTIVE="N"
+			   LOV_BOUNDED="N"
+			   NAME="CHILD_RECORD_ID"
+			   NULLABLE="Y"
+			   PHYSICAL_TYPE="V"
+			   PRIMARY_CHILD_COL="N"
+			   PRIMARY_KEY="N"
+			   REQUIRED="N"
+			   STATUS="Active"
+			   TEXT_LENGTH="15"
+			   TXN_LOG_CODE="Y"
+			   TYPE="Data (Public)"
+			   USE_FKEY="N"
+			   USER_NAME="Child Buscomp Record Id">
+			</COLUMN>
+			<COLUMN
+			   ASCII_ONLY="N"
+			   CASCADE_CLEAR="N"
+			   DEFAULT_INSENSITIVITY="None"
+			   EIM_PROCESSING_COLUMN_FLAG="N"
+			   INACTIVE="N"
+			   LOV_BOUNDED="N"
+			   NAME="CLMN"
+			   NULLABLE="Y"
+			   PHYSICAL_TYPE="V"
+			   PRIMARY_CHILD_COL="N"
+			   PRIMARY_KEY="N"
+			   REQUIRED="N"
+			   STATUS="Active"
+			   TEXT_LENGTH="30"
+			   TXN_LOG_CODE="Y"
+			   TYPE="Data (Public)"
+			   USE_FKEY="N"
+			   USER_NAME="Column">
+			</COLUMN>
+			<COLUMN
+			   ASCII_ONLY="N"
+			   CASCADE_CLEAR="N"
+			   DEFAULT="0"
+			   DEFAULT_INSENSITIVITY="None"
+			   EIM_PROCESSING_COLUMN_FLAG="N"
+			   INACTIVE="N"
+			   LOV_BOUNDED="N"
+			   NAME="CONFLICT_ID"
+			   NULLABLE="N"
+			   PHYSICAL_TYPE="V"
+			   PRIMARY_CHILD_COL="N"
+			   PRIMARY_KEY="N"
+			   REQUIRED="Y"
+			   STATUS="Active"
+			   TEXT_LENGTH="15"
+			   TXN_LOG_CODE="Y"
+			   TYPE="System"
+			   USE_FKEY="N"
+			   USER_KEY_SEQUENCE="1"
+			   USER_NAME="Conflict Id">
+			</COLUMN>
+			<COLUMN
+			   ASCII_ONLY="N"
+			   CASCADE_CLEAR="N"
+			   DEFAULT="%NOW%"
+			   DEFAULT_INSENSITIVITY="None"
+			   EIM_PROCESSING_COLUMN_FLAG="N"
+			   INACTIVE="N"
+			   LOV_BOUNDED="N"
+			   NAME="CREATED"
+			   NULLABLE="N"
+			   PHYSICAL_TYPE="U"
+			   PRIMARY_CHILD_COL="N"
+			   PRIMARY_KEY="N"
+			   REQUIRED="Y"
+			   STATUS="Active"
+			   TEXT_LENGTH="7"
+			   TXN_LOG_CODE="Y"
+			   TYPE="System"
+			   USE_FKEY="N"
+			   USER_NAME="Created">
+			</COLUMN>
+			<COLUMN
+			   ASCII_ONLY="N"
+			   CASCADE_CLEAR="N"
+			   DEFAULT="%EMP%"
+			   DEFAULT_INSENSITIVITY="None"
+			   EIM_PROCESSING_COLUMN_FLAG="N"
+			   INACTIVE="N"
+			   LOV_BOUNDED="N"
+			   NAME="CREATED_BY"
+			   NULLABLE="N"
+			   PHYSICAL_TYPE="V"
+			   PRIMARY_CHILD_COL="N"
+			   PRIMARY_KEY="N"
+			   REQUIRED="Y"
+			   STATUS="Active"
+			   TEXT_LENGTH="15"
+			   TXN_LOG_CODE="Y"
+			   TYPE="System"
+			   USE_FKEY="N"
+			   USER_NAME="Created By"
+			   FOREIGN_KEY_TABLE_NAME="6*S_USER">
+			</COLUMN>
+			<COLUMN
+			   ASCII_ONLY="N"
+			   CASCADE_CLEAR="N"
+			   DEFAULT_INSENSITIVITY="None"
+			   EIM_PROCESSING_COLUMN_FLAG="N"
+			   INACTIVE="N"
+			   LOV_BOUNDED="N"
+			   NAME="DB_LAST_UPD"
+			   NULLABLE="Y"
+			   PHYSICAL_TYPE="U"
+			   PRIMARY_CHILD_COL="N"
+			   PRIMARY_KEY="N"
+			   REQUIRED="N"
+			   STATUS="Active"
+			   TEXT_LENGTH="7"
+			   TXN_LOG_CODE="Y"
+			   TYPE="System"
+			   USE_FKEY="N"
+			   USER_NAME="DB Last Updated">
+			</COLUMN>
+			<COLUMN
+			   ASCII_ONLY="N"
+			   CASCADE_CLEAR="N"
+			   DEFAULT_INSENSITIVITY="None"
+			   EIM_PROCESSING_COLUMN_FLAG="N"
+			   INACTIVE="N"
+			   LOV_BOUNDED="N"
+			   NAME="DB_LAST_UPD_SRC"
+			   NULLABLE="Y"
+			   PHYSICAL_TYPE="V"
+			   PRIMARY_CHILD_COL="N"
+			   PRIMARY_KEY="N"
+			   REQUIRED="N"
+			   STATUS="Active"
+			   TEXT_LENGTH="50"
+			   TXN_LOG_CODE="Y"
+			   TYPE="System"
+			   USE_FKEY="N"
+			   USER_NAME="DB Last Updated By">
+			</COLUMN>
+			<COLUMN
+			   ASCII_ONLY="N"
+			   CASCADE_CLEAR="N"
+			   DEFAULT_INSENSITIVITY="None"
+			   EIM_PROCESSING_COLUMN_FLAG="N"
+			   INACTIVE="N"
+			   LOV_BOUNDED="N"
+			   NAME="FIELD_NAME"
+			   NULLABLE="Y"
+			   PHYSICAL_TYPE="V"
+			   PRIMARY_CHILD_COL="N"
+			   PRIMARY_KEY="N"
+			   REQUIRED="N"
+			   STATUS="Active"
+			   TEXT_LENGTH="75"
+			   TXN_LOG_CODE="Y"
+			   TYPE="Data (Public)"
+			   USE_FKEY="N"
+			   USER_NAME="Field">
+			</COLUMN>
+			<COLUMN
+			   ASCII_ONLY="N"
+			   CASCADE_CLEAR="N"
+			   DEFAULT_INSENSITIVITY="None"
+			   EIM_PROCESSING_COLUMN_FLAG="N"
+			   INACTIVE="N"
+			   LOV_BOUNDED="N"
+			   NAME="GROUP_NUM"
+			   NULLABLE="Y"
+			   PHYSICAL_TYPE="V"
+			   PRIMARY_CHILD_COL="N"
+			   PRIMARY_KEY="N"
+			   REQUIRED="N"
+			   STATUS="Active"
+			   TEXT_LENGTH="15"
+			   TXN_LOG_CODE="Y"
+			   TYPE="Data (Public)"
+			   USE_FKEY="N"
+			   USER_NAME="Group Id">
+			</COLUMN>
+			<COLUMN
+			   ASCII_ONLY="N"
+			   CASCADE_CLEAR="N"
+			   DEFAULT_INSENSITIVITY="None"
+			   EIM_PROCESSING_COLUMN_FLAG="N"
+			   INACTIVE="N"
+			   LOV_BOUNDED="N"
+			   NAME="VIF_ROOT_BUSCOMP_NAME"
+			   NULLABLE="Y"
+			   PHYSICAL_TYPE="V"
+			   PRIMARY_CHILD_COL="N"
+			   PRIMARY_KEY="N"
+			   REQUIRED="N"
+			   STATUS="Active"
+			   TEXT_LENGTH="75"
+			   TXN_LOG_CODE="Y"
+			   TYPE="Extension"
+			   USE_FKEY="N"
+			   USER_NAME="VIF_ROOT_BUSCOMP_NAME">
+			</COLUMN>
+			<COLUMN
+			   ASCII_ONLY="N"
+			   CASCADE_CLEAR="N"
+			   DEFAULT_INSENSITIVITY="None"
+			   EIM_PROCESSING_COLUMN_FLAG="N"
+			   INACTIVE="N"
+			   LOV_BOUNDED="N"
+			   NAME="VIF_ROOT_RECORD_ID"
+			   NULLABLE="Y"
+			   PHYSICAL_TYPE="V"
+			   PRIMARY_CHILD_COL="N"
+			   PRIMARY_KEY="N"
+			   REQUIRED="N"
+			   STATUS="Active"
+			   TEXT_LENGTH="15"
+			   TXN_LOG_CODE="Y"
+			   TYPE="Extension"
+			   USE_FKEY="N"
+			   USER_NAME="VIF_ROOT_RECORD_ID">
+			</COLUMN>
+			<COLUMN
+			   ASCII_ONLY="N"
+			   CASCADE_CLEAR="N"
+			   DEFAULT="%NOW%"
+			   DEFAULT_INSENSITIVITY="None"
+			   EIM_PROCESSING_COLUMN_FLAG="N"
+			   INACTIVE="N"
+			   LOV_BOUNDED="N"
+			   NAME="LAST_UPD"
+			   NULLABLE="N"
+			   PHYSICAL_TYPE="U"
+			   PRIMARY_CHILD_COL="N"
+			   PRIMARY_KEY="N"
+			   REQUIRED="Y"
+			   STATUS="Active"
+			   TEXT_LENGTH="7"
+			   TXN_LOG_CODE="Y"
+			   TYPE="System"
+			   USE_FKEY="N"
+			   USER_NAME="Last Updated">
+			</COLUMN>
+			<COLUMN
+			   ASCII_ONLY="N"
+			   CASCADE_CLEAR="N"
+			   DEFAULT="%EMP%"
+			   DEFAULT_INSENSITIVITY="None"
+			   EIM_PROCESSING_COLUMN_FLAG="N"
+			   INACTIVE="N"
+			   LOV_BOUNDED="N"
+			   NAME="LAST_UPD_BY"
+			   NULLABLE="N"
+			   PHYSICAL_TYPE="V"
+			   PRIMARY_CHILD_COL="N"
+			   PRIMARY_KEY="N"
+			   REQUIRED="Y"
+			   STATUS="Active"
+			   TEXT_LENGTH="15"
+			   TXN_LOG_CODE="Y"
+			   TYPE="System"
+			   USE_FKEY="N"
+			   USER_NAME="Last Updated By"
+			   FOREIGN_KEY_TABLE_NAME="6*S_USER">
+			</COLUMN>
+			<COLUMN
+			   ASCII_ONLY="N"
+			   CASCADE_CLEAR="N"
+			   DEFAULT_INSENSITIVITY="None"
+			   EIM_PROCESSING_COLUMN_FLAG="N"
+			   INACTIVE="N"
+			   LOV_BOUNDED="N"
+			   NAME="LINK_NAME"
+			   NULLABLE="Y"
+			   PHYSICAL_TYPE="V"
+			   PRIMARY_CHILD_COL="N"
+			   PRIMARY_KEY="N"
+			   REQUIRED="N"
+			   STATUS="Active"
+			   TEXT_LENGTH="175"
+			   TXN_LOG_CODE="Y"
+			   TYPE="Data (Public)"
+			   USE_FKEY="N"
+			   USER_NAME="Link Name">
+			</COLUMN>
+			<COLUMN
+			   ASCII_ONLY="N"
+			   CASCADE_CLEAR="N"
+			   DEFAULT="0"
+			   DEFAULT_INSENSITIVITY="None"
+			   EIM_PROCESSING_COLUMN_FLAG="N"
+			   INACTIVE="N"
+			   LOV_BOUNDED="N"
+			   NAME="MODIFICATION_NUM"
+			   NULLABLE="N"
+			   PHYSICAL_TYPE="N"
+			   PRECISION="10"
+			   PRIMARY_CHILD_COL="N"
+			   PRIMARY_KEY="N"
+			   REQUIRED="Y"
+			   SCALE="0"
+			   STATUS="Active"
+			   TEXT_LENGTH="22"
+			   TXN_LOG_CODE="Y"
+			   TYPE="System"
+			   USE_FKEY="N"
+			   USER_NAME="Modification Number">
+			</COLUMN>
+			<COLUMN
+			   ASCII_ONLY="N"
+			   CASCADE_CLEAR="N"
+			   COMMENTS="Is Length need more?"
+			   DEFAULT_INSENSITIVITY="None"
+			   EIM_PROCESSING_COLUMN_FLAG="N"
+			   INACTIVE="N"
+			   LOV_BOUNDED="N"
+			   NAME="NEW_VAL"
+			   NULLABLE="Y"
+			   PHYSICAL_TYPE="V"
+			   PRIMARY_CHILD_COL="N"
+			   PRIMARY_KEY="N"
+			   REQUIRED="N"
+			   STATUS="Active"
+			   TEXT_LENGTH="50"
+			   TXN_LOG_CODE="Y"
+			   TYPE="Data (Public)"
+			   USE_FKEY="N"
+			   USER_NAME="New Value">
+			</COLUMN>
+			<COLUMN
+			   ASCII_ONLY="N"
+			   CASCADE_CLEAR="N"
+			   DEFAULT_INSENSITIVITY="None"
+			   EIM_PROCESSING_COLUMN_FLAG="N"
+			   INACTIVE="N"
+			   LOV_BOUNDED="N"
+			   NAME="NODE_NAME"
+			   NULLABLE="Y"
+			   PHYSICAL_TYPE="V"
+			   PRIMARY_CHILD_COL="N"
+			   PRIMARY_KEY="N"
+			   REQUIRED="N"
+			   STATUS="Active"
+			   TEXT_LENGTH="50"
+			   TXN_LOG_CODE="Y"
+			   TYPE="Data (Public)"
+			   USE_FKEY="N"
+			   USER_NAME="Node">
+			</COLUMN>
+			<COLUMN
+			   ASCII_ONLY="N"
+			   CASCADE_CLEAR="N"
+			   COMMENTS="Is Length need more?"
+			   DEFAULT_INSENSITIVITY="None"
+			   EIM_PROCESSING_COLUMN_FLAG="N"
+			   INACTIVE="N"
+			   LOV_BOUNDED="N"
+			   NAME="OLD_VAL"
+			   NULLABLE="Y"
+			   PHYSICAL_TYPE="V"
+			   PRIMARY_CHILD_COL="N"
+			   PRIMARY_KEY="N"
+			   REQUIRED="N"
+			   STATUS="Active"
+			   TEXT_LENGTH="50"
+			   TXN_LOG_CODE="Y"
+			   TYPE="Extension"
+			   USE_FKEY="N"
+			   USER_NAME="Old Value">
+			</COLUMN>
+			<COLUMN
+			   ASCII_ONLY="N"
+			   CASCADE_CLEAR="N"
+			   DEFAULT_INSENSITIVITY="None"
+			   EIM_PROCESSING_COLUMN_FLAG="N"
+			   INACTIVE="N"
+			   LOV_BOUNDED="N"
+			   NAME="OPERATION_CD"
+			   NULLABLE="Y"
+			   PHYSICAL_TYPE="V"
+			   PRIMARY_CHILD_COL="N"
+			   PRIMARY_KEY="N"
+			   REQUIRED="N"
+			   STATUS="Active"
+			   TEXT_LENGTH="30"
+			   TXN_LOG_CODE="Y"
+			   TYPE="Data (Public)"
+			   USE_FKEY="N"
+			   USER_NAME="OPERATION_CD">
+			</COLUMN>
+			<COLUMN
+			   ASCII_ONLY="N"
+			   CASCADE_CLEAR="N"
+			   DEFAULT_INSENSITIVITY="None"
+			   EIM_PROCESSING_COLUMN_FLAG="N"
+			   INACTIVE="N"
+			   LOV_BOUNDED="N"
+			   NAME="OPERATION_DT"
+			   NULLABLE="Y"
+			   PHYSICAL_TYPE="U"
+			   PRIMARY_CHILD_COL="N"
+			   PRIMARY_KEY="N"
+			   REQUIRED="N"
+			   STATUS="Active"
+			   TEXT_LENGTH="7"
+			   TXN_LOG_CODE="Y"
+			   TYPE="Data (Public)"
+			   USE_FKEY="N"
+			   USER_NAME="Date">
+			</COLUMN>
+			<COLUMN
+			   ASCII_ONLY="N"
+			   CASCADE_CLEAR="N"
+			   DEFAULT_INSENSITIVITY="None"
+			   EIM_PROCESSING_COLUMN_FLAG="N"
+			   INACTIVE="N"
+			   LOV_BOUNDED="N"
+			   NAME="RECORD_ID"
+			   NULLABLE="Y"
+			   PHYSICAL_TYPE="V"
+			   PRIMARY_CHILD_COL="N"
+			   PRIMARY_KEY="N"
+			   REQUIRED="N"
+			   STATUS="Active"
+			   TEXT_LENGTH="15"
+			   TXN_LOG_CODE="Y"
+			   TYPE="Data (Public)"
+			   USE_FKEY="N"
+			   USER_NAME="Record Id">
+			</COLUMN>
+			<COLUMN
+			   ASCII_ONLY="N"
+			   CASCADE_CLEAR="N"
+			   DEFAULT_INSENSITIVITY="None"
+			   EIM_PROCESSING_COLUMN_FLAG="N"
+			   INACTIVE="N"
+			   LOV_BOUNDED="N"
+			   NAME="ROW_ID"
+			   NULLABLE="N"
+			   PHYSICAL_TYPE="V"
+			   PRIMARY_CHILD_COL="N"
+			   PRIMARY_KEY="Y"
+			   REQUIRED="Y"
+			   STATUS="Active"
+			   TEXT_LENGTH="15"
+			   TXN_LOG_CODE="Y"
+			   TYPE="System"
+			   USE_FKEY="N"
+			   USER_NAME="Row Id">
+			</COLUMN>
+			<COLUMN
+			   ASCII_ONLY="N"
+			   CASCADE_CLEAR="N"
+			   DEFAULT_INSENSITIVITY="None"
+			   EIM_PROCESSING_COLUMN_FLAG="N"
+			   INACTIVE="N"
+			   LOV_BOUNDED="N"
+			   NAME="SYNC_DT"
+			   NULLABLE="Y"
+			   PHYSICAL_TYPE="U"
+			   PRIMARY_CHILD_COL="N"
+			   PRIMARY_KEY="N"
+			   REQUIRED="N"
+			   STATUS="Active"
+			   TEXT_LENGTH="7"
+			   TXN_LOG_CODE="Y"
+			   TYPE="Data (Public)"
+			   USE_FKEY="N"
+			   USER_NAME="Date Synchronized">
+			</COLUMN>
+			<COLUMN
+			   ASCII_ONLY="N"
+			   CASCADE_CLEAR="N"
+			   DEFAULT_INSENSITIVITY="None"
+			   EIM_PROCESSING_COLUMN_FLAG="N"
+			   INACTIVE="N"
+			   LOV_BOUNDED="N"
+			   NAME="TBL_NAME"
+			   NULLABLE="Y"
+			   PHYSICAL_TYPE="V"
+			   PRIMARY_CHILD_COL="N"
+			   PRIMARY_KEY="N"
+			   REQUIRED="N"
+			   STATUS="Active"
+			   TEXT_LENGTH="30"
+			   TXN_LOG_CODE="Y"
+			   TYPE="Data (Public)"
+			   USE_FKEY="N"
+			   USER_NAME="Table Name">
+			</COLUMN>
+			<COLUMN
+			   ASCII_ONLY="N"
+			   CASCADE_CLEAR="N"
+			   DEFAULT_INSENSITIVITY="None"
+			   EIM_PROCESSING_COLUMN_FLAG="N"
+			   INACTIVE="N"
+			   LOV_BOUNDED="N"
+			   NAME="TBL_RECORD_ID"
+			   NULLABLE="Y"
+			   PHYSICAL_TYPE="V"
+			   PRIMARY_CHILD_COL="N"
+			   PRIMARY_KEY="N"
+			   REQUIRED="N"
+			   STATUS="Active"
+			   TEXT_LENGTH="15"
+			   TXN_LOG_CODE="Y"
+			   TYPE="Data (Public)"
+			   USE_FKEY="N"
+			   USER_NAME="Table Row Id">
+			</COLUMN>
+			<COLUMN
+			   ASCII_ONLY="N"
+			   CASCADE_CLEAR="N"
+			   DEFAULT_INSENSITIVITY="None"
+			   EIM_PROCESSING_COLUMN_FLAG="N"
+			   INACTIVE="N"
+			   LOV_BOUNDED="N"
+			   NAME="USER_ID"
+			   NULLABLE="Y"
+			   PHYSICAL_TYPE="V"
+			   PRIMARY_CHILD_COL="N"
+			   PRIMARY_KEY="N"
+			   REQUIRED="N"
+			   STATUS="Active"
+			   TEXT_LENGTH="15"
+			   TXN_LOG_CODE="Y"
+			   TYPE="Data (Public)"
+			   USE_FKEY="N"
+			   USER_NAME="Employee Id">
+			</COLUMN>
+			<INDEX
+			   ALLOW_REVERSE_SCAN="N"
+			   CLUSTER="N"
+			   CLUSTER_2="Y"
+			   INACTIVE="N"
+			   NAME="CX_VIF_AUDT_ITM_P1"
+			   NODE_TYPE="ALL"
+			   PARTITION_INDICATOR="N"
+			   TARGET_PLATFORM="ALL"
+			   TYPE="Primary Key"
+			   UNIQUE="Y"
+			   USER_PRIMARY_KEY="N">
+				<INDEX_COLUMN
+				   INACTIVE="N"
+				   NAME="ROW_ID"
+				   SEQUENCE="1"
+				   SORT_ORDER="Asc"
+				   COLUMN_NAME="6*ROW_ID15*CX_VIF_AUDT_ITM">
+				</INDEX_COLUMN>
+			</INDEX>
+		</TABLE>
+	</PROJECT>
+</REPOSITORY>
